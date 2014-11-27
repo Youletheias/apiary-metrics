@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Metrics: Yousra Harkat</title>
+
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/underscore.js"></script>
+    <script src="lib/backbone.js"></script>
+    <script src="src/metrics.js"></script>
+    <script src="lib/alert.js"></script>
+    <script src="src/alert_spec.js"></script>
+
+    <!-- Latest compiled and minified BootStrap CSS & JavaScript -->
+    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="lib/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- Alerts -->
+<div class="page-alerts">
+    <div class="alert alert-success page-alert" id="alert-1">
+        <button type="button" class="close"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+        <strong>Well done!</strong> Your request was submitted successfully
+    </div>
+    <div class="alert alert-danger page-alert" id="alert-4">
+        <button type="button" class="close"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+        <strong>Oh snap!</strong> Change few things and try submitting again.
+    </div>
+</div>
+
+<!-- Metrics part -->
+<div id="metricApp">
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-wrap">
+                        <i class="fa fa-comment-o"></i>
+                        <h1>Metrics - APIARY</h1>
+                        <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+                            <div class="form-group">
+                                <label for="new-data" class="sr-only">Message</label>
+                                <textarea name="message" id="new-data" rows="5" class="form-control"
+                                          placeholder="Issue a POST request"></textarea>
+                            </div>
+                            <input type="submit" id="add-btn" class="btn btn-custom btn-lg btn-block" value="Send">
+                        </form>
+                        <hr>
+                    </div>
+                </div>
+                <!-- /.col-xs-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>Yousra Harkat - 2014</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
